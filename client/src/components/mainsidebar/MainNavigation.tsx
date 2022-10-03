@@ -31,6 +31,7 @@ import {
   IoAdd,
 } from "react-icons/io5";
 import IUser from "types/IUser";
+import Logo from "components/layout/Logo";
 
 interface MainSidebarItem {
   path: string;
@@ -70,7 +71,7 @@ const MainSidebar = (props: {
       <div className={styles.SidebarTop}>
         <Link href="/">
           <a className={styles.SidebarLogo}>
-            <Image src={LogoIcon} alt="Blueno" priority />
+            <Logo />
           </a>
         </Link>
         {!isLoading && (
